@@ -1,0 +1,12 @@
+
+version: '3'
+
+services: 
+  api-workout-appointments:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=workoutdb
+      - POSTGRESQL_PASSWORD=api201!
+      - POSTGRESQL_DATABASE=apiworkoutappointments
